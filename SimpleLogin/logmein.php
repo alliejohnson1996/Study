@@ -7,7 +7,7 @@
 
  function validate($password, &$error){
      $fin = fopen('company.txt', 'r'); // open file to read
-     while(!feof($fin)){
+     while(!feof($fin)){ //if it hasnt reached the end of file
          $line= fgets($fin);
          $true_pass = $line;
          
