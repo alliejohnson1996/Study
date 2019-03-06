@@ -1,13 +1,11 @@
 /**
  This function makes an object to encapsulate a client
  @param {string} company the name of the company
- @param {string} name the contact name
- @param {string} email their email address
+ 
  */
 function Client(company){
     this.company = company;
-    //this.name = name;
-    //this.email = email;
+
 }
 
 /**
@@ -16,8 +14,7 @@ function Client(company){
  */
 function add_client(){
     let company = document.getElementById('company').value;
-    //let name = document.getElementById('contact').value;
-    //let email = document.getElementById('email').value;
+    
     
     let client = new Client(company);
     
